@@ -1,0 +1,9 @@
+1) tester l'api dans l'url : https://www.themealdb.com/api/json/v1/1/search.php?s=tomato
+
+2) Aller chercher les données avec axios
+
+3) stocker les données dans le state 
+
+4) afficher les données avec un map , mettre la logique des cartes dans un composant Card.json
+
+Bonus: rechecher ce qui est tapé dans l'input 
