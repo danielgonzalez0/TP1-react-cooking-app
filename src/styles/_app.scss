@@ -1,6 +1,7 @@
-body {
+.header {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
@@ -12,7 +13,6 @@ h1 {
 }
 
 #searchBar {
-
   background-color: white;
   width: 340px;
   height: 40px;
@@ -24,5 +24,81 @@ h1 {
   &:focus-visible {
     border: solid 2px $color-1;
     outline: none;
+  }
+}
+
+.flex-container {
+  margin: 0 20px;
+  display: flex;
+  width: calc(100% - 40px);
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.card-container {
+  flex: 0 0 20%;
+  min-width: 320px;
+  padding: 30px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 2px $color-1;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+
+  h3 {
+    margin: 0 0 20px 0;
+    height: 48px;
+  }
+
+  .img-container {
+    height: 260px;
+    width: 260px;
+    background-color: black;
+    margin: 30px 20px;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+  .description {
+    height: 220px;
+    overflow: hidden;
+  }
+
+  .popup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: fixed;
+
+    .container {
+      h3 {
+        margin-top: 30px;
+        height: 30px;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 75%;
+      height: 75%;
+      background-color: $white;
+  
+      p {
+        width: 75%;
+        overflow: auto;
+      }
+    }
   }
 }
